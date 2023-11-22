@@ -1,0 +1,99 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the grid container */
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 80px;
+    padding: 100px;
+    background-color: cyan;
+    height: 100%;
+  }
+  
+  /* Base style for each grid item */
+  .grid-item {
+    background-color: var(--default-background-color, #870606);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  /* Custom styling for individual grid items */
+  .box-1 {
+    --default-background-color: rgb(65, 126, 52);
+    border-radius: 0px;
+  }
+  
+  .box-2 {
+    --default-background-color: rgb(232, 120, 223);
+    border-radius: 0px;
+  
+  }
+  
+  .box-3 {
+    --default-background-color: yellow;
+    border-radius: 0px;
+  
+  }
+  
+  .box-4 {
+    --default-background-color: purple;
+    border-radius: 0px;
+  }
+  
+  .box-5 {
+    --default-background-color: orange;
+    border-radius: 100px;
+  }
+  
+  .box-6 {
+    --default-background-color: teal;
+    border-radius: 100px;
+  }
+  
+  .box-7 {
+    --default-background-color: pink;
+    border-radius: 100px;
+  
+  }
+  
+  .box-8 {
+    --default-background-color: #FFD700;
+    border-radius: 100px;
+    
+  }
+  
+  .box-9 {
+    --default-background-color: cyan;
+    border: 5px solid rgb(225, 221, 6); 
+  }
+  
+  .box-10 {
+    --default-background-color: cyan; 
+    border: 5px solid rgb(19, 181, 46); 
+  }
+  
+  .box-11 {
+    --default-background-color: cyan;
+    border: 5px solid rgb(189, 35, 158);
+  }
+  
+  .box-12 {
+    --default-background-color: cyan; 
+    border: 5px solid rgb(173, 26, 26); 
+  }
+  
+  
