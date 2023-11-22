@@ -1,0 +1,333 @@
+/* Global Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 1680px;
+  margin: auto;
+  margin-right: 200px;
+}
+
+.sidebar {
+  top: 0;
+  width: 12rem;
+  height: 100vh;
+  background-color: rgb(0, 208, 255);
+  flex-shrink: 0;
+  padding: 2rem;
+  /* Sidebar styles */
+  /* ... */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  display: grid;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem;
+}
+
+.interior-section {
+  /* Interior Design section styles */
+  margin-bottom: 0px;
+}
+
+.interior-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.interior-section h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  grid-gap: 20px;
+}
+
+.image {
+  /* Image container styles */
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  /* Individual image styles */
+  width: 100%;
+  height: 400px;
+}
+
+/* Additional styling for other sections as described */
+/* Adjust as per actual content and design */
+
+.content {
+  grid-column: 2 / 3; /* Content takes the second column */
+  grid-row: 1; /* Starts from the first row */
+  padding: 40px;
+}
+
+/* Additional CSS for the Service section */
+#service,
+#designers,
+#packages {
+  margin-top: 0px; /* Adjust as needed */
+}
+
+#service,
+#designers,
+#packages h2 {
+  font-size: 28px; /* Increase the font size for the section title */
+  font-weight: bold;
+}
+
+#service p,
+#designers p,
+#packages p {
+  font-size: 16px; /* Adjust paragraph font size */
+  color: #333; /* Adjust paragraph text color */
+  margin-bottom: 20px; /* Bottom margin for the paragraph */
+}
+
+.profiles {
+  background-color: rgb(0, 208, 255);
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 20px; /* Gap between grid items */
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile {
+  background-color: rgb(208, 229, 244);
+  text-align: center;
+  padding: 20px;
+}
+
+.profile img {
+  width: 300px; /* Adjust image size */
+  height: 300px;
+}
+
+.profile h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#packages {
+  margin-top: 40px; /* Adjust as needed */
+}
+
+#packages h2 {
+  font-size: 28px; /* Increase the font size for the section title */
+  font-weight: bold;
+}
+
+#packages p {
+  font-size: 16px; /* Adjust paragraph font size */
+  color: #333; /* Adjust paragraph text color */
+  margin-bottom: 20px; /* Bottom margin for the paragraph */
+}
+
+#packages .package-profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Gap between the grid items */
+  margin-top: 20px;
+}
+
+.package-tables {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.package-tables table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.package-tables th,
+.package-tables td {
+  text-align: center;
+  padding: 8px;
+}
+
+.package-tables th {
+  background-color: #f2f2f2;
+}
+
+.package-tables button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.package-tables button:hover {
+  background-color: #0056b3;
+}
+/* Additional CSS for the Packages section */
+#packages {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#packages h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#packages p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.package-profiles {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for parent */
+  gap: 20px;
+}
+
+/* .packages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+/* gap: 20px;
+  } */
+
+.package-tables {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.package-tables h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.package-tables table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.package-tables th,
+.package-tables td {
+  text-align: center;
+  padding: 8px;
+}
+
+.package-tables th {
+  background-color: #f2f2f2;
+}
+
+.package-tables button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.package-tables button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional CSS for the Contacts section */
+#contacts {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+#contacts h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#contacts p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 2fr; /* Single column layout */
+  grid-gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for other sections as described */
+/* Adjust as per actual content and design */
