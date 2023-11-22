@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveCircle 8s linear infinite alternate; /* Reversing animation */
+}
+
+@keyframes moveCircle {
+  0% {
+    background-color: #3498db; /* Start color */
+    top: 20px;
+    left: 20px;
+  }
+  25% {
+    background-color: #f39c12; /* Color change at 25% */
+    top: 20px;
+    left: calc(100vw - 120px);
+  }
+  50% {
+    background-color: #2ecc71; /* Color change at 50% */
+    top: calc(100vh - 120px);
+    left: calc(100vw - 120px);
+  }
+  75% {
+    background-color: #e74c3c; /* Color change at 75% */
+    top: calc(100vh - 120px);
+    left: 20px;
+  }
+  100% {
+    background-color: #3498db; /* Return to start color */
+    top: 20px;
+    left: 20px;
+  }
+}
+
